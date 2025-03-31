@@ -25,7 +25,9 @@ Os testes são realizados com vetores de **20.000, 40.000 e 60.000 elementos**, 
 
 ## 🖥️ Execução  
 
-Para compilar e executar o projeto, utilize:  
+Para compilar e executar o projeto, navegue até a raiz do projeto e execute os seguintes comandos no terminal:  
 
-
+```bash
+chmod +x ./src/execute.sh    # Concede permissão de execução ao script caso ele ainda não tenha permissão (só é necessário executar esse comando uma vez)
+./src/execute.sh             # Executa o script para compilar e rodar o programa
 
