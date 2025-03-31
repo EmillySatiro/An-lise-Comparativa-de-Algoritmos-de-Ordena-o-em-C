@@ -1,4 +1,5 @@
 #include <time.h>
+#include <stdlib.h>
 #include "utils.h"
 
 int* criar_array_cresecente(int size) {
@@ -47,7 +48,7 @@ double calcular_tempo(int array[], int size, SortFunction sortFunc) {
   clock_t start, end;
   
   start = clock();
-  insertionSort(array, size);
+  sortFunc(array, size);
   end = clock();
   
   double tempo = ((double)(end - start) * 1000.0) / CLOCKS_PER_SEC;
