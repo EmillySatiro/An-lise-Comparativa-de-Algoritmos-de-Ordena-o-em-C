@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <sys/time.h>
+#include <stdbool.h>  
 #include "insertion_sort/insertionsort.h"
 #include "cocktail_shaker_sort/cocktail_shaker_sort.h"
 #include "utils/utils.h"
@@ -74,9 +75,9 @@ int main() {
     
     srand(time(NULL));
 
-    testar_algoritmo("Insertion Sort", sizes, num_sizes, insertion_sort);
+    //testar_algoritmo("Insertion Sort", sizes, num_sizes, insertion_sort);
     
-    // testar_algoritmo("Cocktail Shaker Sort", sizes, num_sizes, cocktail_shaker_sort);
+    testar_algoritmo("Cocktail Shaker Sort", sizes, num_sizes, cocktail_shaker_sort);
     
     return 0;
 }
