@@ -17,7 +17,7 @@ void cocktail_shaker_sort(int vetor[], int tamanho){
         // ESQUERDA para DIREITA
         for (int i = esquerda; i < direita; i++) {
             if (vetor[i] > vetor[i + 1]) {
-                trocar(&vetor[i], &vetor[i + 1]);
+                swap(&vetor[i], &vetor[i + 1]);
             }
         }
         // O maior elemento já ta na direita então diminui  o limite
@@ -26,7 +26,7 @@ void cocktail_shaker_sort(int vetor[], int tamanho){
         // DIREITA para ESQUERDA
         for (int i = direita; i > esquerda; i--) {
             if (vetor[i] < vetor[i - 1]) {
-                trocar(&vetor[i], &vetor[i - 1]);
+                swap(&vetor[i], &vetor[i - 1]);
             }
         }
         // O menor elemento já ta na esquerda então aumenta o limite
