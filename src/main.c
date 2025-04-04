@@ -8,7 +8,7 @@
 #include "utils/utils.h"
 
 // Numero de Repetições para cada base de dados 
-#define REPETICOES 2
+#define REPETICOES 3
 
 // Função para testar um algoritmo de ordenação
 void testar_algoritmo(const char* nome_algoritmo, int sizes[], int num_sizes, 
@@ -100,6 +100,8 @@ int main() {
     // Testando cada algoritmo com os vetores
     testar_algoritmo("Insertion Sort", sizes, num_sizes, insertion_sort, bases_cresc, bases_dec, bases_rand);
     testar_algoritmo("Cocktail Shaker Sort", sizes, num_sizes, cocktail_shaker_sort, bases_cresc, bases_dec, bases_rand);
+    testar_algoritmo("Cocktail Shaker Sort Melhorado", sizes, num_sizes, cocktail_shaker_sort, bases_cresc, bases_dec, bases_rand);
+
 
     for (int i = 0; i < num_sizes; i++) {
         free(bases_cresc[i]);
