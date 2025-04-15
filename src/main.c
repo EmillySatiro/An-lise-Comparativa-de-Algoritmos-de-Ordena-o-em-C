@@ -7,7 +7,7 @@
 #include "cocktail_shaker_sort/cocktail_shaker_sort.h"
 #include "utils/utils.h"
 
-// Numero de Repetições para cada base de dados 
+
 #define REPETICOES 3
 
 // Função para testar um algoritmo de ordenação
